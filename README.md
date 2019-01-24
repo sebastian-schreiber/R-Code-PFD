@@ -22,4 +22,6 @@ FIGURE-4-stochastic-bif.R uses stochastic-base-code.R to create Figure 4
 
 FIGURE-5-stochastic-bif-with-storage.R uses stochastic-overlapping-base-code.R to create Figure 5
 
+FIGURE-6-stochasticbifs4.R uses stochastic-base-code.R to create Figure 6
+
 
