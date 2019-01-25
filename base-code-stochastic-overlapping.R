@@ -3,14 +3,14 @@
 # by  Sebastian J. Schreiber, Masato Yamamichi and Sharon Y. Strauss
 # that has been accepted for publication in Ecology. 
 
-# This file providews the  base commands 
-# for simulatting and exploring the stochastic, two species competition model model  
-# Ni[t+1]=Ni[t]*(Ni[t]/(a[i]+Ni[t]+bi*Nj[t]))*(lambdai[t]/(1+alphai*Ni[t]+betai*Nj[t]))+si*Ni[t]
-# where lambdai is the intrinsic rate of growth of species i
+# This file provides the  base commands 
+# for simulating and exploring the stochastic, two species competition model 
+# Ni[t+1]=Ni[t]*(Ni[t]/(ai+Ni[t]+bi*Nj[t]))*(lambdai[t]/(1+alphai*Ni[t]+betai*Nj[t]))+si*Ni[t]
+# where lambdai is the intrinsic growth rate of species i
 # alphai/betai are the strength of intra/interspecific competition on species i
 # ai and bi determine the strength of positive frequency dependence
 # and si is the survival of species i
-# Most of this code (as with the Ecology paper) only exame the model with ai=0
+# Most of this code (as with the Ecology paper) only examine the model with ai=0
 
 
 # required packages

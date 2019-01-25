@@ -3,13 +3,13 @@
 # by  Sebastian J. Schreiber, Masato Yamamichi and Sharon Y. Strauss
 # that has been accepted for publication in Ecology. 
 
-# This file providews the  base commands 
-# for simulatting and exploring the deterministic, two species competition model model  
-# Ni[t+1]=Ni[t]*(Ni[t]/(a[i]+Ni[t]+bi*Nj[t]))*(lambdai/(1+alphai*Ni[t]+betai*Nj[t]))
-# where lambdai is the intrinsic rate of growth of species i
+# This file provides the  base commands 
+# for simulating and exploring the deterministic, two species competition model 
+# Ni[t+1]=Ni[t]*(Ni[t]/(aiNi[t]+bi*Nj[t]))*(lambdai/(1+alphai*Ni[t]+betai*Nj[t]))
+# where lambdai is the intrinsic growth rate of species i
 # alphai/betai are the strength of intra/interspecific competition on species i
 # ai and bi determine the strength of positive frequency dependence
-# Most of this code (as with the Ecology paper) only exame the model with ai=0
+# Most of this code (as with the Ecology paper) only examine the model with ai=0
 
 # required packages
 require(rootSolve)
@@ -56,7 +56,7 @@ nullclines=function(parms=parms,main.text=""){
   
 # The following code solves for 
 # equilibria given an initial guess
-# input: list of parms lambda, a, b, alpha, beta
+# input: list of parms lambda, a, b, alpha, beta and initial guess
 # output: plot of the equilibrium of the specified color
 
 equi=function(parms,guess,coll="black",radial=FALSE){

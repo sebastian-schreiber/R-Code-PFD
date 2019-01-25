@@ -4,7 +4,7 @@
 # that has been accepted for publication in Ecology. 
 
 # This code uses base-code-stochastic-overlapping.R
-# to create Figure S1 in Supplement S3
+# to create Figure S-1C in Supplement S3
 
 # required files
 source("base-code-stochastic-overlapping.R")
