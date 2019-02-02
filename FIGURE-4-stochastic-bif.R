@@ -3,7 +3,7 @@
 # by  Sebastian J. Schreiber, Masato Yamamichi and Sharon Y. Strauss
 # that has been accepted for publication in Ecology. 
 
-# This code uses the deterministic simulation code in base-code.R
+# This code uses the stochastic simulation code in base-code-stochastic.R
 # To create Figure 4 of the publication
 
 # required code  

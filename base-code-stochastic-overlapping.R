@@ -8,7 +8,7 @@
 # Ni[t+1]=Ni[t]*(Ni[t]/(ai+Ni[t]+bi*Nj[t]))*(lambdai[t]/(1+alphai*Ni[t]+betai*Nj[t]))+si*Ni[t]
 # where lambdai is the intrinsic growth rate of species i
 # alphai/betai are the strength of intra/interspecific competition on species i
-# ai and bi determine the strength of positive frequency dependence
+# ai and bi determine the strength of positive frequency-dependence
 # and si is the survival of species i
 # Most of this code (as with the Ecology paper) only examine the model with ai=0
 
@@ -102,8 +102,8 @@ um=function(parms,x0){
 igr=function(parms){
   s=parms$s # survival
   b=c(0,0) # remove PFD
-  alpha=parms$alpha #intraspecific competition coeffs. 
-  beta=parms$beta #interspecific competition coeffs.
+  alpha=parms$alpha # intraspecific competition coeffs. 
+  beta=parms$beta # interspecific competition coeffs.
   mean.lambda=parms$lambda # mean lambda values
   sd.log.lambda=parms$sd.log.lambda # sds of log lambda (assumed to be equal)
   rho=parms$rho # cross correlations

@@ -5,10 +5,10 @@
 
 # This file provides the  base commands 
 # for simulating and exploring the deterministic, two species competition model 
-# Ni[t+1]=Ni[t]*(Ni[t]/(aiNi[t]+bi*Nj[t]))*(lambdai/(1+alphai*Ni[t]+betai*Nj[t]))
+# Ni[t+1]=Ni[t]*(Ni[t]/(ai+Ni[t]+bi*Nj[t]))*(lambdai/(1+alphai*Ni[t]+betai*Nj[t]))
 # where lambdai is the intrinsic growth rate of species i
 # alphai/betai are the strength of intra/interspecific competition on species i
-# ai and bi determine the strength of positive frequency dependence
+# ai and bi determine the strength of positive frequency-dependence
 # Most of this code (as with the Ecology paper) only examine the model with ai=0
 
 # required packages
